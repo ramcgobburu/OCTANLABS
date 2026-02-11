@@ -210,7 +210,9 @@ export function AIBusinessAnimation() {
             className="w-16 h-16 rounded-full border-2 flex items-center justify-center bg-background shadow-lg hover:scale-110 transition-all duration-300 group"
             style={{ borderColor: tool.color }}
           >
-            <tool.icon className="w-7 h-7" style={{ color: tool.color }} />
+            <span style={{ color: tool.color }}>
+              <tool.icon className="w-7 h-7" />
+            </span>
           </div>
           <div className="absolute top-18 left-1/2 transform -translate-x-1/2 text-xs font-medium text-center whitespace-nowrap bg-background/90 backdrop-blur-sm rounded px-2 py-1 border border-border/50">
             {tool.name}
